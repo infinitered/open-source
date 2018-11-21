@@ -29,4 +29,5 @@ This list is currently being fleshed out. There are several missing projects and
 
 ## Infinite Red Guides
 
-None yet, but stay tuned!
+[CircleCI CD Setup - Hex](./CircleCI CD Setup - Hex.md)
+[CircleCI CD Setup - NPM](./CircleCI CD Setup - NPM.md)
