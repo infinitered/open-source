@@ -17,6 +17,7 @@ This list is currently being fleshed out. There are several missing projects and
 | [Ignite Bowser](https://github.com/infinitered/ignite-ir-boilerplate-bowser) | ❓ | Active | ❓ | :x: |
 | [Ignite Cyberdemon](https://github.com/infinitered/ignite-ir-boilerplate-cyberdemon) | ❓ | Planning | :x: | :x: |
 | [Ignite WebView](https://github.com/infinitered/ignite-webview) | Jamon | Active | ✅ | ✅ |
+| [Ignite Animatable](https://github.com/infinitered/ignite-animatable) | ❓ | Maintenance | ✅ | ✅ |
 | [Reactotron](https://github.com/infinitered/reactotron) | ❓ | Active | ✅ | :x: |
 | [Gluegun](https://github.com/infinitered/gluegun) | Jamon | Active | ✅ | :x: |
 | [Solidarity](https://github.com/infinitered/solidarity) | Gant | Active | ✅ | :x: |
