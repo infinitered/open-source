@@ -201,13 +201,21 @@ workflows:
 
 ## Commit message format
 
+Format your commit messages like so to get the desired version bump:
+
 | Format | Version bump | Example |
 |--------|--------------|---------|
-| `fix|refactor|perf(feature): Message` | Patch-level, e.g. `1.0.3` to `1.0.4` | `fix(wkwebview): Fixed issue #12 - crash when navigating` |
+| `fix/refactor(feature): Message` | Patch-level, e.g. `1.0.3` to `1.0.4` | `fix(wkwebview): Fixed issue #12 - crash when navigating` |
 | `feat(feature): Message` | Minor/Feature-level, e.g. `1.0.3` to `1.1.0` | `feat(android): Added file upload` |
-| `fix|feat|perf(feature): BREAKING CHANGES: Message` | Major/Breaking-level, e.g. `1.0.3` to `2.0.0` | `fix(ios): BREAKING CHANGES: Removed UIWebView` |
+| `fix/feat/perf(feature): BREAKING CHANGES: Message` | Major/Breaking-level, e.g. `1.0.3` to `2.0.0` | `fix(ios): BREAKING CHANGES: Removed UIWebView` |
 
-If you set up your repo to only allow `Squash & Merge` on pull request, you will get a chance to edit the commit message and release notes and cut a new release.
+Each release will include a changelog:
+
+![image](https://user-images.githubusercontent.com/1479215/48959809-cb13df00-ef1c-11e8-9281-579df168c0e7.png)
+
+Semantic Release will also comment on any issues that are fixed in a particular release.
+
+TIP: If you set up your repo to only allow `Squash & Merge` on pull request, you will get a chance to edit the commit message and release notes and cut a new release.
 
 ![image](https://user-images.githubusercontent.com/1479215/48959734-31e4c880-ef1c-11e8-96db-4e854a8edc1d.png)
 
