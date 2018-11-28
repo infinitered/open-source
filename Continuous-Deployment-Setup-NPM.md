@@ -194,7 +194,7 @@ workflows:
 
 ## Test Automatic Release
 
-1. Create a new empty commit with `git commit --allow-empty -m "fix(ci): Testing CI release"
+1. Create a new empty commit with `git commit --allow-empty -m "fix(ci): Testing CI release"`
 2. Push it to `master` (or do a pullrequest and merge it in)
 3. CircleCI should deploy a new version to NPM
  - NOTE: If CircleCI does the wrong thing and a version goes up to NPM that you don't want, just run `npm unpublish YOURPROJECT@1.4.1` or whatever version. If you are able to do this within 15 minutes NPM will remove the version. Beyond 15 minutes all you can do is use `npm deprecate` and deploy a new version.
