@@ -13,7 +13,7 @@ This list is currently being fleshed out. There are several missing projects and
 | Name | Lead | Status | CI | CD | Build |
 |------|------|--------|----|----|-------|
 | [Ignite CLI](https://github.com/infinitered/ignite) | Jamon | Active | ✅ | :x: | ❓ |
-| [Ignite Andross](https://github.com/infinitered/ignite-ir-boilerplate-andross) | ❓ | Maintenance | ✅ | ✅ | ❓ |
+| [Ignite Andross](https://github.com/infinitered/ignite-ir-boilerplate-andross) | ❓ | Maintenance | ✅ | ✅ | [![CircleCI](https://circleci.com/gh/infinitered/ignite-ir-boilerplate-andross.svg?style=svg)](https://circleci.com/gh/infinitered/ignite-ir-boilerplate-andross) |
 | [Ignite Bowser](https://github.com/infinitered/ignite-ir-boilerplate-bowser) | ❓ | Active | ❓ | :x: | ❓ |
 | [Ignite Cyberdemon](https://github.com/infinitered/ignite-ir-boilerplate-cyberdemon) | ❓ | Planning | :x: | :x: | ❓ |
 | [Ignite WebView](https://github.com/infinitered/ignite-webview) | Jamon | Active | ✅ | ✅ | ❓ |
