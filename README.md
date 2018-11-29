@@ -21,7 +21,7 @@ This list is currently being fleshed out. There are several missing projects and
 | [Reactotron](https://github.com/infinitered/reactotron) | ❓ | Active | ✅ | :x: | ❓ |
 | [Gluegun](https://github.com/infinitered/gluegun) | Jamon | Active | ✅ | :x: | ❓ |
 | [Solidarity](https://github.com/infinitered/solidarity) | Gant | Active | ✅ | :x: | ❓ |
-| [Solidarity React Native](https://github.com/infinitered/solidarity-react-native) | Gant | Active | :construction: | :construction: | :construction: |
+| [Solidarity React Native](https://github.com/infinitered/solidarity-react-native) | Gant | Active | ✅ | ✅ | [![CircleCI](https://circleci.com/gh/infinitered/solidarity-react-native.svg?style=svg)](https://circleci.com/gh/infinitered/solidarity-react-native) |
 | [apisauce](https://github.com/infinitered/apisauce) | Robin | Maintenance | ❓ | :x: | ❓ |
 | [reduxsauce](https://github.com/infinitered/reduxsauce) | ❓ | Maintenance | ❓ | :x: | ❓ |
 | [Thesis Phoenix](https://github.com/infinitered/reactotron) | ❓ | Maintenance | ❓ | :x: | ❓ |
