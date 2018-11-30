@@ -21,6 +21,7 @@ This document shows the steps necessary to set up automatic continuous integrati
   - Select `Linux` for the operating system and `Node` for the language
 7. Commit your code changes and push to github
 8. Choose `Start building` to initiate the first CI build
+9. Enable builds from forked pull requests. Go to project settings > Advanced Settings, then toggle on `Build forked pull requests`
 
 ## Configure Code for CircleCI
 
