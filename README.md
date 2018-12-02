@@ -99,6 +99,15 @@ This list is currently being fleshed out. There are several missing projects and
     <td>❓</td>
   </tr>
   <tr>
+    <td><a href="https://github.com/infinitered/ignite-splash">Ignite Splash</a></td>
+    <td>Leon</td>
+    <td>Active</td>
+    <td>❌</td>
+    <td>❌</td>
+    <td><img alt="version" src="https://img.shields.io/npm/v/ignite-splash.svg" /></td>
+    <td>❓</td>
+  </tr>
+  <tr>
     <td><a href="https://github.com/infinitered/reactotron">Reactotron</a></td>
     <td>Rich</td>
     <td>Active</td>
