@@ -96,11 +96,7 @@ This list is currently being fleshed out. There are several missing projects and
     <td>✅</td>
     <td>✅</td>
     <td><img alt="version" src="https://img.shields.io/npm/v/ignite-i18n.svg" /></td>
-    <td>
-      <a href="https://circleci.com/gh/infinitered/ignite-i18n">
-        <img alt="CircleCI" src="https://circleci.com/gh/infinitered/ignite-i18n.svg?style=svg" />
-      </a>
-    </td>
+    <td>❓</td>
   </tr>
   <tr>
     <td><a href="https://github.com/infinitered/reactotron">Reactotron</a></td>
