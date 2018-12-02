@@ -19,6 +19,7 @@ This list is currently being fleshed out. There are several missing projects and
 | [Ignite WebView](https://github.com/infinitered/ignite-webview) | Jamon | Active | ✅ | ✅ | ❓ |
 | [Ignite Animatable](https://github.com/infinitered/ignite-animatable) | ❓ | Maintenance | ✅ | ✅ | [![CircleCI](https://circleci.com/gh/infinitered/ignite-animatable/tree/master.svg?style=svg)](https://circleci.com/gh/infinitered/ignite-animatable/tree/master) |
 | [Reactotron](https://github.com/infinitered/reactotron) | ❓ | Active | ✅ | :x: | ❓ |
+| [Reactotron-Core-Client](https://github.com/infinitered/reactotron-core-client) | ❓ | Active | ✅ | ✅ | [![CircleCI](https://circleci.com/gh/infinitered/reactotron-core-client/tree/master.svg?style=svg)](https://circleci.com/gh/infinitered/reactotron-core-client/tree/master)
 | [Gluegun](https://github.com/infinitered/gluegun) | Jamon | Active | ✅ | :x: | ❓ |
 | [Solidarity](https://github.com/infinitered/solidarity) | Gant | Active | ✅ | :x: | ❓ |
 | [Solidarity React Native](https://github.com/infinitered/solidarity-react-native) | Gant | Active | ✅ | ✅ | [![CircleCI](https://circleci.com/gh/infinitered/solidarity-react-native.svg?style=svg)](https://circleci.com/gh/infinitered/solidarity-react-native) |
