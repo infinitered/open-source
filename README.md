@@ -14,7 +14,7 @@ This list is currently being fleshed out. There are several missing projects and
 |------|------|--------|----|----|-------|
 | [Ignite CLI](https://github.com/infinitered/ignite) | Jamon | Active | ✅ | :x: | ❓ |
 | [Ignite Andross](https://github.com/infinitered/ignite-ir-boilerplate-andross) | ❓ | Maintenance | ✅ | ✅ | [![CircleCI](https://circleci.com/gh/infinitered/ignite-ir-boilerplate-andross.svg?style=svg)](https://circleci.com/gh/infinitered/ignite-ir-boilerplate-andross) |
-| [Ignite Bowser](https://github.com/infinitered/ignite-ir-boilerplate-bowser) | ❓ | Active | ❓ | :x: | ❓ |
+| [Ignite Bowser](https://github.com/infinitered/ignite-ir-boilerplate-bowser) | ❓ | Active | ✅ | ✅ | [![CircleCI](https://circleci.com/gh/infinitered/ignite-ir-boilerplate-bowser.svg?style=svg)](https://circleci.com/gh/infinitered/ignite-ir-boilerplate-bowser) |
 | [Ignite Cyberdemon](https://github.com/infinitered/ignite-ir-boilerplate-cyberdemon) | ❓ | Planning | :x: | :x: | ❓ |
 | [Ignite WebView](https://github.com/infinitered/ignite-webview) | Jamon | Active | ✅ | ✅ | ❓ |
 | [Ignite Animatable](https://github.com/infinitered/ignite-animatable) | ❓ | Maintenance | ✅ | ✅ | [![CircleCI](https://circleci.com/gh/infinitered/ignite-animatable/tree/master.svg?style=svg)](https://circleci.com/gh/infinitered/ignite-animatable/tree/master) |
