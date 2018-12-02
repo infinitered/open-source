@@ -59,12 +59,12 @@ This list is currently being fleshed out. There are several missing projects and
     </td>
   </tr>
   <tr>
-    <td><a href="https://github.com/infinitered/ignite-ir-boilerplate-cyberdemo">Ignite Cyberdemon</a></td>
+    <td><a href="https://github.com/infinitered/ignite-ir-boilerplate-cyberdemon">Ignite Cyberdemon</a></td>
     <td>❓</td>
     <td>Planning</td>
     <td>❌</td>
     <td>❌</td>
-    <td><img alt="version" src="https://img.shields.io/npm/v/ignite-ir-boilerplate-cyberdemo.svg" /></td>
+    <td><img alt="version" src="https://img.shields.io/npm/v/ignite-ir-boilerplate-cyberdemon.svg" /></td>
     <td>❓</td>
   </tr>
   <tr>
