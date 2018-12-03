@@ -18,8 +18,8 @@ This list is currently being fleshed out. There are several missing projects and
     <th>Status</th>
     <th>CI</th>
     <th>CD</th>
-    <th>Version</th>
     <th>Build</th>
+    <th>Version</th>
   </tr>
 </thead>
 <tbody>
@@ -29,8 +29,8 @@ This list is currently being fleshed out. There are several missing projects and
     <td>Active</td>
     <td>✅</td>
     <td>❌</td>
-    <td><img alt="version" src="https://img.shields.io/npm/v/ignite-cli.svg" /></td>
     <td>❓</td>
+    <td><img alt="version" src="https://img.shields.io/npm/v/ignite-cli.svg" /></td>
   </tr>
   <tr>
     <td><a href="https://github.com/infinitered/ignite-ir-boilerplate-andross">Ignite Andross</a></td>
@@ -38,12 +38,12 @@ This list is currently being fleshed out. There are several missing projects and
     <td>Maintenance</td>
     <td>✅</td>
     <td>✅</td>
-    <td><img alt="version" src="https://img.shields.io/npm/v/ignite-ir-boilerplate-andross.svg" /></td>
     <td>
       <a href="https://circleci.com/gh/infinitered/ignite-ir-boilerplate-andross">
         <img alt="CircleCI" src="https://circleci.com/gh/infinitered/ignite-ir-boilerplate-andross.svg?style=svg" />
       </a>
     </td>
+    <td><img alt="version" src="https://img.shields.io/npm/v/ignite-ir-boilerplate-andross.svg" /></td>
   </tr>
   <tr>
     <td><a href="https://github.com/infinitered/ignite-ir-boilerplate-bowser">Ignite Bowser</a></td>
@@ -51,12 +51,12 @@ This list is currently being fleshed out. There are several missing projects and
     <td>Active</td>
     <td>✅</td>
     <td>✅</td>
-    <td><img alt="version" src="https://img.shields.io/npm/v/ignite-ir-boilerplate-bowser.svg" /></td>
     <td>
       <a href="https://circleci.com/gh/infinitered/ignite-ir-boilerplate-bowser">
         <img alt="CircleCI" src="https://circleci.com/gh/infinitered/ignite-ir-boilerplate-bowser.svg?style=svg" />
       </a>
     </td>
+    <td><img alt="version" src="https://img.shields.io/npm/v/ignite-ir-boilerplate-bowser.svg" /></td>
   </tr>
   <tr>
     <td><a href="https://github.com/infinitered/ignite-ir-boilerplate-cyberdemon">Ignite Cyberdemon</a></td>
@@ -64,8 +64,8 @@ This list is currently being fleshed out. There are several missing projects and
     <td>Planning</td>
     <td>❌</td>
     <td>❌</td>
-    <td><img alt="version" src="https://img.shields.io/npm/v/ignite-ir-boilerplate-cyberdemon.svg" /></td>
     <td>❓</td>
+    <td><img alt="version" src="https://img.shields.io/npm/v/ignite-ir-boilerplate-cyberdemon.svg" /></td>
   </tr>
   <tr>
     <td><a href="https://github.com/infinitered/ignite-webview">Ignite WebView</a></td>
@@ -73,8 +73,8 @@ This list is currently being fleshed out. There are several missing projects and
     <td>Active</td>
     <td>✅</td>
     <td>✅</td>
-    <td><img alt="version" src="https://img.shields.io/npm/v/ignite-webview.svg" /></td>
     <td>❓</td>
+    <td><img alt="version" src="https://img.shields.io/npm/v/ignite-webview.svg" /></td>
   </tr>
   <tr>
     <td><a href="https://github.com/infinitered/ignite-animatable">Ignite Animatable</a></td>
@@ -82,12 +82,12 @@ This list is currently being fleshed out. There are several missing projects and
     <td>Active</td>
     <td>✅</td>
     <td>✅</td>
-    <td><img alt="version" src="https://img.shields.io/npm/v/ignite-animatable.svg" /></td>
     <td>
       <a href="https://circleci.com/gh/infinitered/ignite-animatable">
         <img alt="CircleCI" src="https://circleci.com/gh/infinitered/ignite-animatable.svg?style=svg" />
       </a>
     </td>
+    <td><img alt="version" src="https://img.shields.io/npm/v/ignite-animatable.svg" /></td>
   </tr>
   <tr>
     <td><a href="https://github.com/infinitered/ignite-i18n">Ignite i18n</a></td>
@@ -95,12 +95,12 @@ This list is currently being fleshed out. There are several missing projects and
     <td>Active</td>
     <td>✅</td>
     <td>✅</td>
-    <td><img alt="version" src="https://img.shields.io/npm/v/ignite-i18n.svg" /></td>
     <td>
       <a href="https://circleci.com/gh/infinitered/ignite-i18n">
         <img alt="CircleCI" src="https://circleci.com/gh/infinitered/ignite-i18n.svg?style=svg" />
       </a>
     </td>
+    <td><img alt="version" src="https://img.shields.io/npm/v/ignite-i18n.svg" /></td>
   </tr>
   <tr>
     <td><a href="https://github.com/infinitered/ignite-splash">Ignite Splash</a></td>
@@ -108,8 +108,8 @@ This list is currently being fleshed out. There are several missing projects and
     <td>Active</td>
     <td>❌</td>
     <td>❌</td>
-    <td><img alt="version" src="https://img.shields.io/npm/v/ignite-splash.svg" /></td>
     <td>❓</td>
+    <td><img alt="version" src="https://img.shields.io/npm/v/ignite-splash.svg" /></td>
   </tr>
   <tr>
     <td><a href="https://github.com/infinitered/reactotron">Reactotron</a></td>
@@ -117,8 +117,8 @@ This list is currently being fleshed out. There are several missing projects and
     <td>Active</td>
     <td>✅</td>
     <td>❌</td>
-    <td><img alt="version" src="https://img.shields.io/npm/v/reactotron.svg" /></td>
     <td>❓</td>
+    <td><img alt="version" src="https://img.shields.io/npm/v/reactotron.svg" /></td>
   </tr>
   <tr>
     <td><a href="https://github.com/infinitered/gluegun">Gluegun</a></td>
@@ -126,8 +126,8 @@ This list is currently being fleshed out. There are several missing projects and
     <td>Active</td>
     <td>✅</td>
     <td>❌</td>
-    <td><img alt="version" src="https://img.shields.io/npm/v/gluegun.svg" /></td>
     <td>❓</td>
+    <td><img alt="version" src="https://img.shields.io/npm/v/gluegun.svg" /></td>
   </tr>
   <tr>
     <td><a href="https://github.com/infinitered/solidarity">Solidarity</a></td>
@@ -135,8 +135,8 @@ This list is currently being fleshed out. There are several missing projects and
     <td>Active</td>
     <td>✅</td>
     <td>❌</td>
-    <td><img alt="version" src="https://img.shields.io/npm/v/solidarity.svg" /></td>
     <td>❓</td>
+    <td><img alt="version" src="https://img.shields.io/npm/v/solidarity.svg" /></td>
   </tr>
   <tr>
     <td><a href="https://github.com/infinitered/solidarity-react-native">Solidarity React Native</a></td>
@@ -144,12 +144,12 @@ This list is currently being fleshed out. There are several missing projects and
     <td>Active</td>
     <td>✅</td>
     <td>✅</td>
-    <td><img alt="version" src="https://img.shields.io/npm/v/solidarity-react-native.svg" /></td>
     <td>
       <a href="https://circleci.com/gh/infinitered/solidarity-react-native">
         <img alt="CircleCI" src="https://circleci.com/gh/infinitered/solidarity-react-native.svg?style=svg" />
       </a>
     </td>
+    <td><img alt="version" src="https://img.shields.io/npm/v/solidarity-react-native.svg" /></td>
   </tr>
   <tr>
     <td><a href="https://github.com/infinitered/apisauce">apisaunce</a></td>
@@ -157,8 +157,8 @@ This list is currently being fleshed out. There are several missing projects and
     <td>Maintenance</td>
     <td>❓</td>
     <td>❌</td>
-    <td><img alt="version" src="https://img.shields.io/npm/v/apisauce.svg" /></td>
     <td>❓</td>
+    <td><img alt="version" src="https://img.shields.io/npm/v/apisauce.svg" /></td>
   </tr>
   <tr>
     <td><a href="https://github.com/infinitered/reduxsauce">reduxsaunce</a></td>
@@ -166,8 +166,8 @@ This list is currently being fleshed out. There are several missing projects and
     <td>Maintenance</td>
     <td>❓</td>
     <td>❌</td>
-    <td><img alt="version" src="https://img.shields.io/npm/v/reduxsauce.svg" /></td>
     <td>❓</td>
+    <td><img alt="version" src="https://img.shields.io/npm/v/reduxsauce.svg" /></td>
   </tr>
   <tr>
     <td><a href="https://github.com/infinitered/thesis-phoenix">Thesis Phoenix</a></td>
@@ -175,8 +175,8 @@ This list is currently being fleshed out. There are several missing projects and
     <td>Maintenance</td>
     <td>❓</td>
     <td>❌</td>
-    <td><img alt="version" src="https://img.shields.io/hexpm/v/thesis.svg" /></td>
     <td>❓</td>
+    <td><img alt="version" src="https://img.shields.io/hexpm/v/thesis.svg" /></td>
   </tr>
   <tr>
     <td><a href="https://github.com/infinitered/torch">Torch</a></td>
@@ -184,8 +184,8 @@ This list is currently being fleshed out. There are several missing projects and
     <td>Maintenance</td>
     <td>❓</td>
     <td>❌</td>
-    <td><img alt="version" src="https://img.shields.io/hexpm/v/torch.svg" /></td>
     <td>❓</td>
+    <td><img alt="version" src="https://img.shields.io/hexpm/v/torch.svg" /></td>
   </tr>
   <tr>
     <td><a href="https://github.com/infinitered/mithril">Mithril</a></td>
@@ -193,8 +193,8 @@ This list is currently being fleshed out. There are several missing projects and
     <td>Maintenance</td>
     <td>❓</td>
     <td>❌</td>
-    <td><img alt="version" src="https://img.shields.io/hexpm/v/mithril.svg" /></td>
     <td>❓</td>
+    <td><img alt="version" src="https://img.shields.io/hexpm/v/mithril.svg" /></td>
   </tr>
 </tbody>
 </table>
