@@ -175,7 +175,7 @@ This list is currently being fleshed out. There are several missing projects and
     <td>Maintenance</td>
     <td>❓</td>
     <td>❌</td>
-    <td><img alt="version" src="https://img.shields.io/hexpm/v/thesis-phoenix.svg" /></td>
+    <td><img alt="version" src="https://img.shields.io/hexpm/v/thesis.svg" /></td>
     <td>❓</td>
   </tr>
   <tr>
