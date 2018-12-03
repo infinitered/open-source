@@ -165,12 +165,12 @@ This list is currently being fleshed out. There are several missing projects and
     <td><img alt="version" src="https://img.shields.io/npm/v/solidarity-react-native.svg" /></td>
   </tr>
   <tr>
-    <td><a href="https://github.com/infinitered/apisauce">apisaunce</a></td>
+    <td><a href="https://github.com/infinitered/apisauce">apisauce</a></td>
     <td>Robin</td>
     <td>Maintenance</td>
-    <td>❓</td>
-    <td>❌</td>
-    <td>❓</td>
+    <td>🚧</td>
+    <td>🚧</td>
+    <td>🚧</td>
     <td><img alt="version" src="https://img.shields.io/npm/v/apisauce.svg" /></td>
   </tr>
   <tr>
