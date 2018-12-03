@@ -29,6 +29,7 @@ This document shows the steps necessary to set up automatic continuous integrati
 2. Create a file inside that folder named `config.yml`
 3. Use the below template in that file. For simple Node projects, you likely won't have to change it.
 4. If needed, see [configuration docs](https://circleci.com/docs/2.0/config-intro/#section=configuration) for additional configuration options.
+_(Here is a complete [config.yml](https://github.com/infinitered/open-source/blob/master/config.example.yml) with CI and CD steps completed)_
 
 ```yaml
 # Javascript Node CircleCI 2.0 configuration file
