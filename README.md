@@ -60,7 +60,7 @@ This list is currently being fleshed out. There are several missing projects and
   </tr>
   <tr>
     <td><a href="https://github.com/infinitered/ignite-ir-boilerplate-cyberdemon">Ignite Cyberdemon</a></td>
-    <td>❓</td>
+    <td>Kevin</td>
     <td>Planning</td>
     <td>❌</td>
     <td>❌</td>
