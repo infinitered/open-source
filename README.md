@@ -1,10 +1,14 @@
-# Infinite Red Open Source
+# Infinite Red Dashboard
 
 Hey there! Welcome!
 
 This repo contains markdown files with info and guides for [Infinite Red](https://infinite.red)'s open source libraries and tooling.
 
 We're glad you're here and feel free to poke around. If you notice an issue, feel free to submit a PR. You can easily edit Markdown files right in Github by clicking the little :pencil: icon on the top right.
+
+## Infinite Red Websites
+
+[![infinite.red](https://img.shields.io/website-up-down-green-red/https/infinite.red.svg?label=infinite.red)](https://infinite.red)
 
 ## Infinite Red Open Source Projects
 
