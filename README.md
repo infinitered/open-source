@@ -228,6 +228,8 @@ This list is currently being fleshed out. There are several missing projects and
 </tbody>
 </table>
 
+Legend: ✅ = Setup, ❌ = Not setup, 🚧 = Currently under construction, ❓ = Unknown status
+
 ## Infinite Red Guides
 
 - [Continuous Deployment Setup - Hex](./Continuous-Deployment-Setup-Hex.md)
