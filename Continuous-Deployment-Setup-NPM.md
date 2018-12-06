@@ -76,6 +76,9 @@ jobs:
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
       - run:
+          name: Change Permissions
+          command: sudo chown -R $(whoami) /usr/local
+      - run:
           name: Run tests
           command: yarn ci:test # this command will be added to/found in your package.json scripts
 
@@ -89,18 +92,12 @@ workflows:
             - setup
 ```
 
-If your project requires global NPM packages (for example, `npm i -g react-native`) or `npm link`, you will need to add two more items to the `tests:` task, right after the `restore_cache:` and before the `Run tests` blocks. Customize to your own requirements. This is more common when testing CLI packages.
+If your project requires global NPM packages (for example, `npm i -g react-native`) or `npm link`, add those steps to the `tests` block between the `chown` and tests blocks. This is more common when testing CLI packages. Don't forget the `chown` step right above those or you'll run into permission issues.
 
 ```yml
-      - restore_cache:
-          name: Restore node modules
-          keys:
-            - v1-dependencies-{{ checksum "package.json" }}
-            # fallback to using the latest cache if no exact match is found
-            - v1-dependencies-
       - run:
           name: Change Permissions
-          command: sudo chown -R $(whoami) /usr/local/lib/node_modules && sudo chown -R $(whoami) /usr/local/bin
+          command: sudo chown -R $(whoami) /usr/local
       - run:
           name: Install React Native CLI
           command: npm i -g react-native-cli
