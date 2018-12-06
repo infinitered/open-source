@@ -19,7 +19,7 @@ This document shows the steps necessary to set up automatic continuous integrati
   - If you see `Contact Repo Admin`, you will need to be given admin permissions on CircleCI. See [Jamon](https://github.com/jamonholmgren) about this.
 6. Set Up Project
   - Select `Linux` for the operating system and `Node` for the language
-7. Commit your code changes and push to github
+7. Copy the basic config.yml to `.circleci/config.yml`, commit your code changes and push to github `master`
 8. Choose `Start building` to initiate the first CI build
 9. Enable builds from forked pull requests. Go to project settings > Advanced Settings, then toggle on `Build forked pull requests`
 
@@ -87,6 +87,29 @@ workflows:
       - tests:
           requires:
             - setup
+```
+
+If your project requires global NPM packages (for example, `npm i -g react-native`) or `npm link`, you will need to add two more items to the `tests:` task, right after the `restore_cache:` and before the `Run tests` blocks. Customize to your own requirements. This is more common when testing CLI packages.
+
+```yml
+      - restore_cache:
+          name: Restore node modules
+          keys:
+            - v1-dependencies-{{ checksum "package.json" }}
+            # fallback to using the latest cache if no exact match is found
+            - v1-dependencies-
+      - run:
+          name: Change Permissions
+          command: sudo chown -R $(whoami) /usr/local/lib/node_modules && sudo chown -R $(whoami) /usr/local/bin
+      - run:
+          name: Install React Native CLI
+          command: npm i -g react-native-cli
+      - run:
+          name: Link Ignite CLI
+          command: npm link
+      - run:
+          name: Run tests
+          command: yarn ci:test # this command will be added to/found in your package.json scripts
 ```
 
 5. Make sure the test script is added to your `package.json`
