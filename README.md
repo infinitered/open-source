@@ -55,7 +55,7 @@ This list is currently being fleshed out. There are several missing projects and
   </tr>
   <tr>
     <td><a href="https://github.com/infinitered/ignite-ir-boilerplate-bowser">Ignite Bowser</a></td>
-    <td>❓</td>
+    <td>Carlin</td>
     <td>Active</td>
     <td>✅</td>
     <td>✅</td>
