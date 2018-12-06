@@ -241,6 +241,11 @@ TIP: If you set up your repo to only allow `Squash & Merge` on pull request, you
 
 ![image](https://user-images.githubusercontent.com/1479215/48959734-31e4c880-ef1c-11e8-96db-4e854a8edc1d.png)
 
+## Notes
+
+1. You can't have your `master` branch "protected". [Go here to see if it is.](https://github.com/infinitered/ignite/settings/branches)
+2. If you run into problems where it doesn't seem to think there are any changes to push, it generally means something is messed up with your Github tags. Delete any errant tags and do a manual deploy.
+
 ## Questions? Issues?
 
 Open an issue in this repo and tag @carlinisaacson and @jamonholmgren.
