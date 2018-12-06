@@ -1,4 +1,4 @@
-# Infinite Red Dashboard
+# Infinite Red Open Source Dashboard
 
 Hey there! Welcome!
 
@@ -32,7 +32,7 @@ This list is currently being fleshed out. There are several missing projects and
     <td>Jamon</td>
     <td>Active</td>
     <td>✅</td>
-    <td>🚧</td>
+    <td>✅</td>
     <td>
       <a href="https://circleci.com/gh/infinitered/ignite">
         <img alt="CircleCI" src="https://circleci.com/gh/infinitered/ignite.svg?style=svg" />
@@ -42,7 +42,7 @@ This list is currently being fleshed out. There are several missing projects and
   </tr>
   <tr>
     <td><a href="https://github.com/infinitered/ignite-ir-boilerplate-andross">Ignite Andross</a></td>
-    <td>❓</td>
+    <td>Morgan</td>
     <td>Maintenance</td>
     <td>✅</td>
     <td>✅</td>
