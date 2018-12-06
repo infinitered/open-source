@@ -126,32 +126,32 @@ If your project requires global NPM packages (for example, `npm i -g react-nativ
 
 1. Install semantic-release and git plugin as dev dependencies
   - `yarn add --dev semantic-release @semantic-release/git`
-2. Add a `publish` section to your `.circleci/config.yml`, like so:
+2. Add a `publish` job to the `jobs:` section of your `.circleci/config.yml`, like so:
   
-```
+```yml
 defaults: ...
 
 version: 2
 jobs:
-setup: ...
+  setup: ...
 
-tests: ...
+  tests: ...
 
-publish:
-  <<: *defaults
-  steps:
-    - checkout
-    - run: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
-    - restore_cache:
-        name: Restore node modules
-        keys:
-          - v1-dependencies-{{ checksum "package.json" }}
-          # fallback to using the latest cache if no exact match is found
-          - v1-dependencies-
-    # Run semantic-release after all the above is set.
-    - run:
-        name: Publish to NPM
-        command: yarn ci:publish # this will be added to your package.json scripts
+  publish:
+    <<: *defaults
+    steps:
+      - checkout
+      - run: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+      - restore_cache:
+          name: Restore node modules
+          keys:
+            - v1-dependencies-{{ checksum "package.json" }}
+            # fallback to using the latest cache if no exact match is found
+            - v1-dependencies-
+      # Run semantic-release after all the above is set.
+      - run:
+          name: Publish to NPM
+          command: yarn ci:publish # this will be added to your package.json scripts
 
 
 workflows:
