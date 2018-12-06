@@ -31,9 +31,13 @@ This list is currently being fleshed out. There are several missing projects and
     <td><a href="https://github.com/infinitered/ignite">Ignite CLI</a></td>
     <td>Jamon</td>
     <td>Active</td>
+    <td>✅</td>
     <td>🚧</td>
-    <td>🚧</td>
-    <td>🚧</td>
+    <td>
+      <a href="https://circleci.com/gh/infinitered/ignite">
+        <img alt="CircleCI" src="https://circleci.com/gh/infinitered/ignite.svg?style=svg" />
+      </a>
+    </td>
     <td><img alt="version" src="https://img.shields.io/npm/v/ignite-cli.svg" /></td>
   </tr>
   <tr>
