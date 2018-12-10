@@ -210,9 +210,9 @@ This list is currently being fleshed out. There are several missing projects and
     <td><a href="https://github.com/infinitered/thesis-phoenix">Thesis Phoenix</a></td>
     <td>Yulian</td>
     <td>Maintenance</td>
-    <td>🚧</td>
-    <td>🚧</td>
-    <td>🚧</td>
+    <td>✅</td>
+    <td>❎</td>
+    <td>✅</td>
     <td><img alt="version" src="https://img.shields.io/hexpm/v/thesis.svg" /></td>
   </tr>
   <tr>
@@ -236,7 +236,7 @@ This list is currently being fleshed out. There are several missing projects and
 </tbody>
 </table>
 
-Legend: ✅ = Setup, ❌ = Not setup, 🚧 = Currently under construction, ❓ = Unknown status
+Legend: ✅ = Setup, ❌ = Not setup, 🚧 = Currently under construction, ❓ = Unknown status, ❎ = Not applicable
 
 ## Infinite Red Guides
 
