@@ -47,24 +47,24 @@ This list is currently being fleshed out. There are several missing projects and
     <td>✅</td>
     <td>✅</td>
     <td>
-      <a href="https://circleci.com/gh/infinitered/ignite-ir-boilerplate-andross">
-        <img alt="CircleCI" src="https://circleci.com/gh/infinitered/ignite-ir-boilerplate-andross.svg?style=svg" />
+      <a href="https://circleci.com/gh/infinitered/ignite-andross">
+        <img alt="CircleCI" src="https://circleci.com/gh/infinitered/ignite-andross.svg?style=svg" />
       </a>
     </td>
-    <td><img alt="version" src="https://img.shields.io/npm/v/ignite-ir-boilerplate-andross.svg" /></td>
+    <td><img alt="version" src="https://img.shields.io/npm/v/ignite-andross.svg" /></td>
   </tr>
   <tr>
-    <td><a href="https://github.com/infinitered/ignite-ir-boilerplate-bowser">Ignite Bowser</a></td>
+    <td><a href="https://github.com/infinitered/ignite-bowser">Ignite Bowser</a></td>
     <td>Carlin</td>
     <td>Active</td>
     <td>✅</td>
     <td>✅</td>
     <td>
-      <a href="https://circleci.com/gh/infinitered/ignite-ir-boilerplate-bowser">
-        <img alt="CircleCI" src="https://circleci.com/gh/infinitered/ignite-ir-boilerplate-bowser.svg?style=svg" />
+      <a href="https://circleci.com/gh/infinitered/ignite-bowser">
+        <img alt="CircleCI" src="https://circleci.com/gh/infinitered/ignite-bowser.svg?style=svg" />
       </a>
     </td>
-    <td><img alt="version" src="https://img.shields.io/npm/v/ignite-ir-boilerplate-bowser.svg" /></td>
+    <td><img alt="version" src="https://img.shields.io/npm/v/ignite-bowser.svg" /></td>
   </tr>
   <tr>
     <td><a href="https://github.com/infinitered/ignite-ir-boilerplate-cyberdemon">Ignite Cyberdemon</a></td>
