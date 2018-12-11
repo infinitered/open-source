@@ -219,9 +219,9 @@ This list is currently being fleshed out. There are several missing projects and
     <td><a href="https://github.com/infinitered/torch">Torch</a></td>
     <td>Daniel</td>
     <td>Maintenance</td>
-    <td>❓</td>
-    <td>❌</td>
-    <td>❓</td>
+    <td>🚧</td>
+    <td>🚧</td>
+    <td>🚧</td>
     <td><img alt="version" src="https://img.shields.io/hexpm/v/torch.svg" /></td>
   </tr>
   <tr>
