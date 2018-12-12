@@ -210,7 +210,7 @@ This list is currently being fleshed out. There are several missing projects and
     <td><a href="https://github.com/infinitered/thesis-phoenix">Thesis Phoenix</a></td>
     <td>Yulian</td>
     <td>Maintenance</td>
-    <td>✅</td>
+    <td>🚧</td>
     <td>❎</td>
     <td>
       <a href="https://circleci.com/gh/infinitered/thesis-phoenix">
