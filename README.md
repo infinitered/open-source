@@ -154,9 +154,13 @@ This list is currently being fleshed out. There are several missing projects and
     <td><a href="https://github.com/infinitered/ignite-vector-icons">Ignite Vector Icons</a></td>
     <td>❓</td>
     <td>Maintenance</td>
-    <td>🚧</td>
-    <td>🚧</td>
-    <td>🚧</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>
+      <a href="https://circleci.com/gh/infinitered/ignite-vector-icons">
+        <img alt="CircleCI" src="https://circleci.com/gh/infinitered/ignite-vector-icons.svg?style=svg" />
+      </a>
+    </td>
     <td><img alt="version" src="https://img.shields.io/npm/v/ignite-vector-icons.svg" /></td>
   </tr>
   <!-- Ignite Maps -->
