@@ -168,9 +168,9 @@ This list is currently being fleshed out. There are several missing projects and
     <td><a href="https://github.com/infinitered/ignite-maps">Ignite Maps</a></td>
     <td>❓</td>
     <td>Maintenance</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>❌</td>
+    <td>🚧</td>
+    <td>🚧</td>
+    <td>🚧</td>
     <td><img alt="version" src="https://img.shields.io/npm/v/ignite-maps.svg" /></td>
   </tr>
   <!-- Ignite Redux Persist -->
