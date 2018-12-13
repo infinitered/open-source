@@ -197,16 +197,6 @@ This list is currently being fleshed out. There are several missing projects and
     <td>❌</td>
     <td><img alt="version" src="https://img.shields.io/npm/v/ignite-redux-devtools.svg" /></td>
   </tr>
-  <!-- Jest Preset Ignite -->
-  <tr>
-    <td><a href="https://github.com/infinitered/jest-preset-ignite">Jest Preset Ignite</a></td>
-    <td>❓</td>
-    <td>Maintenance</td>
-    <td>🚧</td>
-    <td>🚧</td>
-    <td>🚧</td>
-    <td><img alt="version" src="https://img.shields.io/npm/v/jest-preset-ignite.svg" /></td>
-  </tr>
   <!-- Reactotron -->
   <tr>
     <td><a href="https://github.com/infinitered/reactotron">Reactotron</a></td>
@@ -407,9 +397,9 @@ This list is currently being fleshed out. There are several missing projects and
     <td><a href="https://github.com/infinitered/ramdasauce">Ramdasauce</a></td>
     <td>❓</td>
     <td>Maintenance</td>
-    <td>❓</td>
-    <td>❌</td>
-    <td>❓</td>
+    <td>🚧</td>
+    <td>🚧</td>
+    <td>🚧</td>
     <td><img alt="version" src="https://img.shields.io/npm/v/ramdasauce.svg" /></td>
   </tr>
   <!-- Thesis Phoenix -->
