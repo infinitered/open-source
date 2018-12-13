@@ -397,9 +397,13 @@ This list is currently being fleshed out. There are several missing projects and
     <td><a href="https://github.com/infinitered/ramdasauce">Ramdasauce</a></td>
     <td>❓</td>
     <td>Maintenance</td>
-    <td>🚧</td>
-    <td>🚧</td>
-    <td>🚧</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>
+      <a href="https://circleci.com/gh/infinitered/ramdasauce">
+        <img alt="CircleCI" src="https://circleci.com/gh/infinitered/ramdasauce.svg?style=svg" />
+      </a>
+    </td>
     <td><img alt="version" src="https://img.shields.io/npm/v/ramdasauce.svg" /></td>
   </tr>
   <!-- Thesis Phoenix -->
