@@ -182,9 +182,13 @@ This list is currently being fleshed out. There are several missing projects and
     <td><a href="https://github.com/infinitered/ignite-redux-persist">Ignite Redux Persist</a></td>
     <td>❓</td>
     <td>Maintenance</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>❌</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>
+      <a href="https://circleci.com/gh/infinitered/ignite-redux-persist">
+        <img alt="CircleCI" src="https://circleci.com/gh/infinitered/ignite-redux-persist.svg?style=svg" />
+      </a>
+    </td>
     <td><img alt="version" src="https://img.shields.io/npm/v/ignite-redux-persist.svg" /></td>
   </tr>
   <!-- Ignite Redux DevTools -->
@@ -192,9 +196,13 @@ This list is currently being fleshed out. There are several missing projects and
     <td><a href="https://github.com/infinitered/ignite-redux-devtools">Ignite Redux DevTools</a></td>
     <td>❓</td>
     <td>Maintenance</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>❌</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>
+      <a href="https://circleci.com/gh/infinitered/ignite-redux-devtools">
+        <img alt="CircleCI" src="https://circleci.com/gh/infinitered/ignite-redux-devtools.svg?style=svg" />
+      </a>
+    </td>
     <td><img alt="version" src="https://img.shields.io/npm/v/ignite-redux-devtools.svg" /></td>
   </tr>
   <!-- Reactotron -->
