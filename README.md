@@ -519,9 +519,11 @@ This list is currently being fleshed out. There are several missing projects and
     <td><a href="https://github.com/infinitered/elavon-elixir">Elavon Elixir</a></td>
     <td>❓</td>
     <td>❓</td>
+    <td>✅</td>
     <td>❓</td>
-    <td>❓</td>
-    <td>❓</td>
+    <td>
+      <img src="https://semaphoreci.com/api/v1/ir/elavon-elixir/branches/master/shields_badge.svg" />
+    </td>
     <td><img alt="version" src="https://img.shields.io/hexpm/v/elavon.svg" /></td>
   </tr>
   <!-- Config Validator -->
@@ -529,9 +531,11 @@ This list is currently being fleshed out. There are several missing projects and
     <td><a href="https://github.com/infinitered/config_validator">Config Validator</a></td>
     <td>❓</td>
     <td>❓</td>
+    <td>✅</td>
     <td>❓</td>
-    <td>❓</td>
-    <td>❓</td>
+    <td>
+      <img src="https://semaphoreci.com/api/v1/ir/config_validator/branches/master/shields_badge.svg" />
+    </td>
     <td><img alt="version" src="https://img.shields.io/hexpm/v/config_validator.svg" /></td>
   </tr>
   <!-- UPS -->
@@ -539,9 +543,11 @@ This list is currently being fleshed out. There are several missing projects and
     <td><a href="https://github.com/infinitered/ups">UPS</a></td>
     <td>❓</td>
     <td>❓</td>
+    <td>✅</td>
     <td>❓</td>
-    <td>❓</td>
-    <td>❓</td>
+    <td>
+      <img src="https://semaphoreci.com/api/v1/ir/ups/branches/master/shields_badge.svg" />
+    </td>
     <td><img alt="version" src="https://img.shields.io/hexpm/v/ups.svg" /></td>
   </tr>
   <!-- Mithril PubSub -->
