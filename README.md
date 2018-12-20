@@ -461,9 +461,11 @@ This list is currently being fleshed out. There are several missing projects and
     <td><a href="https://github.com/infinitered/elasticsearch-elixir">Elasticsearch Elixir</a></td>
     <td>❓</td>
     <td>❓</td>
+    <td>✅</td>
     <td>❓</td>
-    <td>❓</td>
-    <td>❓</td>
+    <td>
+      <img src="https://travis-ci.org/infinitered/elasticsearch-elixir.svg?branch=master" />
+    </td>
     <td><img alt="version" src="https://img.shields.io/hexpm/v/elasticsearch.svg" /></td>
   </tr>
   <!-- Authority Ecto -->
