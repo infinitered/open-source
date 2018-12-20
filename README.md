@@ -473,9 +473,11 @@ This list is currently being fleshed out. There are several missing projects and
     <td><a href="https://github.com/infinitered/authority_ecto">Authority Ecto</a></td>
     <td>❓</td>
     <td>❓</td>
+    <td>✅</td>
     <td>❓</td>
-    <td>❓</td>
-    <td>❓</td>
+    <td>
+      <img src="https://travis-ci.org/infinitered/authority_ecto.svg?branch=master" />
+    </td>
     <td><img alt="version" src="https://img.shields.io/hexpm/v/authority_ecto.svg" /></td>
   </tr>
   <!-- Eversign -->
@@ -493,9 +495,11 @@ This list is currently being fleshed out. There are several missing projects and
     <td><a href="https://github.com/infinitered/authority">Authority</a></td>
     <td>❓</td>
     <td>❓</td>
+    <td>✅</td>
     <td>❓</td>
-    <td>❓</td>
-    <td>❓</td>
+    <td>
+      <img src="https://travis-ci.org/infinitered/authority.svg?branch=master" />
+    </td>
     <td><img alt="version" src="https://img.shields.io/hexpm/v/authority.svg" /></td>
   </tr>
   <!-- Maybe -->
@@ -503,9 +507,11 @@ This list is currently being fleshed out. There are several missing projects and
     <td><a href="https://github.com/infinitered/maybe">Maybe</a></td>
     <td>❓</td>
     <td>❓</td>
+    <td>✅</td>
     <td>❓</td>
-    <td>❓</td>
-    <td>❓</td>
+    <td>
+      <img src="https://travis-ci.org/infinitered/maybe.svg?branch=master" />
+    </td>
     <td><img alt="version" src="https://img.shields.io/hexpm/v/maybe.svg" /></td>
   </tr>
   <!-- Elavon Elixir -->
@@ -543,9 +549,11 @@ This list is currently being fleshed out. There are several missing projects and
     <td><a href="https://github.com/infinitered/mithril_pubsub">Mithril PubSub</a></td>
     <td>❓</td>
     <td>❓</td>
+    <td>✅</td>
     <td>❓</td>
-    <td>❓</td>
-    <td>❓</td>
+    <td>
+      <img src="https://travis-ci.org/infinitered/mithril_pubsub.svg?branch=master" />
+    </td>
     <td>❌</td>
   </tr>
 </tbody>
