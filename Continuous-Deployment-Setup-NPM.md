@@ -245,6 +245,20 @@ TIP: If you set up your repo to only allow `Squash & Merge` on pull request, you
 
 1. You can't have your `master` branch "protected". [Go here to see if it is.](https://github.com/infinitered/ignite/settings/branches)
 2. If you run into problems where it doesn't seem to think there are any changes to push, it generally means something is messed up with your Github tags. Delete any errant tags and do a manual deploy.
+3. You may need to [add the following ENV variables](https://discuss.circleci.com/t/trying-to-push-change-back-to-github-please-tell-me-who-you-are/18185/3) to CircleCI if you are getting an error like this:
+
+```
+*** Please tell me who you are.
+
+Run
+
+git config --global user.email "you@example.com"
+git config --global user.name “Your Name”
+
+to set your account’s default identity.
+```
+
+ENV vars to set: `EMAIL`, `GIT_AUTHOR_NAME`, `GIT_COMMITTER_NAME`
 
 ## Questions? Issues?
 
