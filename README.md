@@ -441,6 +441,53 @@ This list is currently being fleshed out. There are several missing projects and
 
 Legend: ✅ = Setup, ❌ = Not setup, 🚧 = Currently under construction, ❓ = Unknown status, ❎ = Not applicable
 
+## Guide to squash commits
+
+*Guide to squash messages for auto deployment*
+
+Each of these keywords must be followed by a colon. They can also be followed by a parenthetical which will add that parenthetical word in *bold* in front of the message in the changelog. E.g. `fix: Updated gluegun` or `fix(deps): Updated gluegun` are both valid.
+
+#### Skip CI: `[skip ci]`
+
+This will not run the deployment script. I usually put it in the _body_ of the commit message, not the title (first line).
+
+I use this a lot to "group" multiple fixes in one release. So I might merge 3 PRs, have the first 2 have `[skip ci]`, and the third I let the CI run, so it gathers up all 3 changes into one changelog and releases once.
+
+#### Non-release changes
+
+**Code base maintenance: `chore: Message`
+**Documentation:** `docs: Message`
+
+These will not add to the changelog nor (by itself) trigger a release. However, be aware that if there are previous `[skip ci]` changes, you _will_ trigger a release with _all_ of the unreleased `fix` or `feat` changes. This is sometimes useful if you merge a ton of PRs with `[skip ci]` and want to trigger a release: just do an empty commit like so:
+
+```
+git commit --allow-empty -m "chore(ci): Trigger release"
+```
+
+... and push directly to master.
+
+#### Patch-level release: `fix: Message`
+
+This will add to the "Bugfixes" section of the changelog and trigger a release (unless `[skip ci]`).
+
+#### Minor version release: `feat: Message`
+
+This will add to the "Features" section of the changelog and trigger a release (unless `[skip ci]`).
+
+#### Major version release:
+
+In your commit message body, whether it's `fix` or `feat`, include the following:
+
+```
+BREAKING CHANGE: Describe the breaking change here
+```
+
+#### Gotchas
+
+• Don't trigger more than one release at a time. One or both will fail.
+• Do _not_ put `BREAKING CHANGES:`, it doesn't work. :sadpanda:
+• I've never released a major version without some sort of hiccup. Maybe next time?
+
 ## Infinite Red Guides
 
 - [Continuous Deployment Setup - NPM](./Continuous-Deployment-Setup-NPM.md)
