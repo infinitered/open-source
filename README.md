@@ -44,7 +44,7 @@ This list is currently being fleshed out. There are several missing projects and
   <!-- Ignite Andross -->
   <tr>
     <td><a href="https://github.com/infinitered/ignite-ir-boilerplate-andross">Ignite Andross</a></td>
-    <td>Morgan</td>
+    <td>Jamon</td>
     <td>Maintenance</td>
     <td>✅</td>
     <td>✅</td>
@@ -58,7 +58,7 @@ This list is currently being fleshed out. There are several missing projects and
   <!-- Ignite Bowser -->
   <tr>
     <td><a href="https://github.com/infinitered/ignite-bowser">Ignite Bowser</a></td>
-    <td>Carlin</td>
+    <td>Jamon</td>
     <td>Active</td>
     <td>✅</td>
     <td>✅</td>
@@ -72,7 +72,7 @@ This list is currently being fleshed out. There are several missing projects and
   <!-- Ignite Cyberdemon -->
   <tr>
     <td><a href="https://github.com/infinitered/ignite-ir-boilerplate-cyberdemon">Ignite Cyberdemon</a></td>
-    <td>Kevin</td>
+    <td>TBD</td>
     <td>Planning</td>
     <td>🚧</td>
     <td>🚧</td>
@@ -96,7 +96,7 @@ This list is currently being fleshed out. There are several missing projects and
   <!-- Ignite Animatable -->
   <tr>
     <td><a href="https://github.com/infinitered/ignite-animatable">Ignite Animatable</a></td>
-    <td>❓</td>
+    <td>TBD</td>
     <td>Active</td>
     <td>✅</td>
     <td>✅</td>
@@ -110,7 +110,7 @@ This list is currently being fleshed out. There are several missing projects and
   <!-- Ignite i18n -->
   <tr>
     <td><a href="https://github.com/infinitered/ignite-i18n">Ignite i18n</a></td>
-    <td>❓</td>
+    <td>TBD</td>
     <td>Active</td>
     <td>✅</td>
     <td>✅</td>
@@ -138,7 +138,7 @@ This list is currently being fleshed out. There are several missing projects and
   <!-- Ignite Dev Screens -->
   <tr>
     <td><a href="https://github.com/infinitered/ignite-dev-screens">Ignite Dev Screens</a></td>
-    <td>❓</td>
+    <td>TBD</td>
     <td>Active</td>
     <td>✅</td>
     <td>✅</td>
@@ -152,7 +152,7 @@ This list is currently being fleshed out. There are several missing projects and
   <!-- Ignite Vector Icons -->
   <tr>
     <td><a href="https://github.com/infinitered/ignite-vector-icons">Ignite Vector Icons</a></td>
-    <td>❓</td>
+    <td>TBD</td>
     <td>Maintenance</td>
     <td>✅</td>
     <td>✅</td>
@@ -166,7 +166,7 @@ This list is currently being fleshed out. There are several missing projects and
   <!-- Ignite Maps -->
   <tr>
     <td><a href="https://github.com/infinitered/ignite-maps">Ignite Maps</a></td>
-    <td>❓</td>
+    <td>TBD</td>
     <td>Maintenance</td>
     <td>✅</td>
     <td>✅</td>
@@ -180,7 +180,7 @@ This list is currently being fleshed out. There are several missing projects and
   <!-- Ignite Redux Persist -->
   <tr>
     <td><a href="https://github.com/infinitered/ignite-redux-persist">Ignite Redux Persist</a></td>
-    <td>❓</td>
+    <td>TBD</td>
     <td>Maintenance</td>
     <td>✅</td>
     <td>✅</td>
@@ -194,7 +194,7 @@ This list is currently being fleshed out. There are several missing projects and
   <!-- Ignite Redux DevTools -->
   <tr>
     <td><a href="https://github.com/infinitered/ignite-redux-devtools">Ignite Redux DevTools</a></td>
-    <td>❓</td>
+    <td>TBD</td>
     <td>Maintenance</td>
     <td>✅</td>
     <td>✅</td>
@@ -397,7 +397,7 @@ This list is currently being fleshed out. There are several missing projects and
   <!-- reduxsauce -->
   <tr>
     <td><a href="https://github.com/infinitered/reduxsauce">reduxsauce</a></td>
-    <td>❓</td>
+    <td>Kevin</td>
     <td>Maintenance</td>
     <td>✅</td>
     <td>✅</td>
@@ -411,7 +411,7 @@ This list is currently being fleshed out. There are several missing projects and
   <!-- Ramdasauce -->
   <tr>
     <td><a href="https://github.com/infinitered/ramdasauce">Ramdasauce</a></td>
-    <td>❓</td>
+    <td>Kevin</td>
     <td>Maintenance</td>
     <td>✅</td>
     <td>✅</td>
