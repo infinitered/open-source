@@ -215,6 +215,7 @@ workflows:
 6. Add the `Circle CI` Github team (Including the `infinitered-circleci` user) to your repo (https://github.com/infinitered/YOURPROJECT/settings/collaboration)
 7. Check git tags `git tag --merged master`. Ensure that what shows up there matches what you expect to see.
   - Sometimes this doesn't match what Github shows. So, you need to do a manual release and be sure to tag it in git with `git tag -a v1.4.0 -m "my version 1.4.0"`. Then push the tag up to github with `git push --tags`. Talk to Carlin or Jamon about this if you're confused.
+  - If you haven't created any tags yet, there will be no output. I'm not entirely sure what semantic-release will do in this case.
 
 ## Test Automatic Release
 
