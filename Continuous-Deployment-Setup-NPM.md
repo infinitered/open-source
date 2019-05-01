@@ -220,6 +220,8 @@ workflows:
 ## Manual Release
 
 1. If you haven't published a manual release yet, go ahead and do so now. `yarn publish` will do the job.
+2. Create a Github release (and tag). https://github.com/infinitered/YOUR_REPO/releases (Draft a new release)
+3. Pull down the tag with `git fetch --tags`, and then re-run `git tag --merged master` to ensure the tag is up on Github
 
 ## Test Automatic Release
 
