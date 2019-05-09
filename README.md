@@ -488,9 +488,9 @@ So an example:
 
 #### Gotchas
 
-• Don't trigger more than one release at a time. One or both will fail.
-• Do _not_ put `BREAKING CHANGES:`, it doesn't work. :sadpanda: Only `BREAKING CHANGE:` (with the colon). And it _must_ be in the commit message body, not the title.
-• I've never released a major version without some sort of hiccup. Maybe next time?
+1. Don't trigger more than one release at a time. One or both will fail.
+2. Do _not_ put `BREAKING CHANGES:`, it doesn't work. :sadpanda: Only `BREAKING CHANGE:` (with the colon). And it _must_ be in the commit message body, not the title.
+3. I've never released a major version without some sort of hiccup. Maybe next time?
 
 ## Infinite Red Guides
 
