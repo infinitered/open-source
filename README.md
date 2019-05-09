@@ -476,16 +476,20 @@ This will add to the "Features" section of the changelog and trigger a release (
 
 #### Major version release:
 
-In your commit message body, whether it's `fix` or `feat`, include the following:
+In your commit message _body_ (not title), whether it's `fix` or `feat`, include the following:
 
 ```
 BREAKING CHANGE: Describe the breaking change here
 ```
 
+So an example:
+
+![breaking change example](https://user-images.githubusercontent.com/1479215/57470446-b19def80-723d-11e9-85e4-400bf65bf32a.png)
+
 #### Gotchas
 
 • Don't trigger more than one release at a time. One or both will fail.
-• Do _not_ put `BREAKING CHANGES:`, it doesn't work. :sadpanda:
+• Do _not_ put `BREAKING CHANGES:`, it doesn't work. :sadpanda: Only `BREAKING CHANGE:` (with the colon). And it _must_ be in the commit message body, not the title.
 • I've never released a major version without some sort of hiccup. Maybe next time?
 
 ## Infinite Red Guides
