@@ -1,7 +1,3 @@
-🚧 🚧 🚧 GUIDE UNDER CONSTRUCTION 🚧 🚧 🚧
-
-This is untested as we're waiting on CircleCI to resolve an issue on their end where macOS builds are getting stuck.
-
 # CircleCI CD Setup - React Native
 
 This document shows the steps necessary to set up automatic continuous integration testing and automatic Fastlane beta builds upon successfully merging a pull request.
@@ -9,9 +5,10 @@ This document shows the steps necessary to set up automatic continuous integrati
 ## First Things First
 
 1. Write tests
-  - If the project already has tests, great. If not, write some.
-  - They better pass! Tests are important because you don't want to be deploying broken code.
-  - See [this](https://github.com/infinitered/ChainReactApp2018) for an example of how we typically setup tests for a React Native app.
+
+   - If the project already has tests, great. If not, write some.
+   - They better pass! Tests are important because you don't want to be deploying broken code.
+   - See [this](https://github.com/infinitered/ChainReactApp2019) for an example of how we typically setup tests for a React Native app.
 
 ## CircleCI Setup
 
@@ -20,20 +17,25 @@ This document shows the steps necessary to set up automatic continuous integrati
 3. Navigate to `Add Projects` on the left
 4. Search for your repo
 5. Choose `Set Up Project`
-  - If you see `Contact Repo Admin`, you will need to be given admin permissions on CircleCI. See [Jamon](https://github.com/jamonholmgren) about this.
+
+   - If you see `Contact Repo Admin`, you will need to be given admin permissions on CircleCI. See [Jamon](https://github.com/jamonholmgren) about this.
+
 6. Set Up Project
-  - Select `macOS` for the operating system and `Other` for the language
+
+   - Select `macOS` for the operating system and `Other` for the language
+
 7. Copy the basic config.yml to `.circleci/config.yml`, commit your code changes and push to github `master`
 8. Choose `Start building` to initiate the first CI build. This build will fail. That's ok. We will update the config in the next step.
 9. Enable builds from forked pull requests. Go to project settings > Advanced Settings, then toggle on `Build forked pull requests`
+10. If this project is open-source, you'll want to make sure the open-source setting is enabled to allow for macOS builds. Go to project settings > Advanced Settings, then toggle `Free and Open Source`.
 
-## Configure Code for CircleCI
+## Continuous Integration
 
 1. Create a folder in the project root named `.circleci`.
 2. Create a file inside that folder named `config.yml`
-3. Use the below template in that file. For simple Node projects, you likely won't have to change it.
+3. Use the below template in that file.
 4. If needed, see [configuration docs](https://circleci.com/docs/2.0/config-intro/#section=configuration) for additional configuration options.
-_(Here is a complete [config.yml](https://github.com/infinitered/open-source/blob/master/config.example.yml) with CI and CD steps completed)_
+   _(Here is a complete [config.yml](https://github.com/infinitered/open-source/blob/master/config.example.yml) with CI and CD steps completed)_
 
 ```yaml
 defaults: &defaults
@@ -96,27 +98,111 @@ workflows:
     },
     ...
   }
-  ```
+```
 
-## Add Fastlane
+## iOS Continuous Deployment
+
+### Add Fastlane
 
 1. Before you can add continuous deployment, you'll need to setup Fastlane and Match to sign and deploy your app. You can follow these blog posts
-to get setup!
+   to get setup!
 
-[Releasing on iOS with Fastlane](https://shift.infinite.red/simple-react-native-ios-releases-4c28bb53a97b)
-[Releasing on Android with Fastlane](https://shift.infinite.red/simple-react-native-android-releases-319dc5e29605)
+   - [Releasing on iOS with Fastlane](https://shift.infinite.red/simple-react-native-ios-releases-4c28bb53a97b)
 
-2. Once you're setup with Fastlane (you should be able to successfully release a beta (or alpha) build to TestFlight or the Google Play store using `fastlane ios beta` and `fastlane android beta`), the first thing will be to make sure CircleCI has all the credentials to run your fastlane scripts:
+   Make sure you get to the point of being able to run:
 
-2a. Go into the Settings screen for your project on CircleCI
-2b. Under "Build Settings", click on "Environment Variables"
-2c. Click "Add Variable"
-2d. Set `FASTLANE_USER` to the email address of your your Apple App Store Connect / Dev Portal user. For Infinite Red projects, this is probably: `admin@infinite.red`
-2e. Do this for all of the variables listed [here](https://github.com/fastlane/docs/blob/950c6f42231d86b5187d2cfdcab2a6c81d0f61dc/docs/best-practices/continuous-integration.md#environment-variables-to-set)
+   ```
+   fastlane ios beta
+   ```
 
-You can find more info from the [Fastlane Docs](https://github.com/fastlane/docs/blob/950c6f42231d86b5187d2cfdcab2a6c81d0f61dc/docs/best-practices/continuous-integration.md)
+2. In your Fastfile, add:
 
-3. Now you can add `deploy` jobs to your CircleCI `config.yml`:
+   ```Ruby
+   before_all do
+     setup_circle_ci
+   end
+   ```
+
+3. In your `beta` lane, make sure you have included a command that bumps the build number prior to building, and then commits the build number after building. Example:
+
+   ```Ruby
+   PROJECT = "YourProject"
+   XCODE_PROJECT    = "#{PROJECT}.xcodeproj"
+
+     lane :beta do
+
+       increment_build_number(xcodeproj: "./#{XCODE_PROJECT}")
+
+       match(type: "appstore")
+       build_ios_app(
+         scheme: PROJECT,
+         workspace: "./YourProject.xcworkspace",
+         xcargs: "-UseNewBuildSystem=NO -allowProvisioningUpdates",
+         export_method: "app-store"
+       )
+
+       # Ship it!
+       upload_to_testflight(
+         skip_waiting_for_build_processing: true
+       )
+
+       commit_version_bump(
+         xcodeproj: "./#{XCODE_PROJECT}",
+         ignore: /tvOS/,
+         force: true,
+         message: "[skip ci] Version bump"
+       )
+     end
+   ```
+
+   If you prefer, you can also do these steps as separate fastlane commands, just make sure to include a `- run:` entry for each one in `config.yml`.
+
+### Setting up CircleCI to Run Fastlane
+
+Check out [this blog](https://medium.com/@odedre/circle-ci-v2-react-native-project-build-release-setup-ce4ef31209d0) for lots of helpful tips.
+
+1. Make sure CircleCI has all the credentials to run your fastlane scripts:
+
+   1. Go into the Settings screen for your project on CircleCI
+   2. Under "Build Settings", click on "Environment Variables" (https://circleci.com/gh/infinitered/YOURPROJECT/edit#env-vars)
+   3. Click "Add Variable"
+   4. Set `FASTLANE_USER` to the email address of your your Apple App Store Connect / Dev Portal user. For Infinite Red projects, this is probably: `admin@infinite.red`
+   5. Do this for all of the variables listed [here](https://github.com/fastlane/docs/blob/950c6f42231d86b5187d2cfdcab2a6c81d0f61dc/docs/best-practices/continuous-integration.md#environment-variables-to-set)
+
+   **Note**: If your dev portal user does not have 2-Factor Auth turned on (`admin@infinite.red` does not), you DO NOT need to set `FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD`. Including this variabe when your account does need it will result in errors during TestFlight upload.
+
+   You can find more info from the [Fastlane Docs](https://github.com/fastlane/docs/blob/950c6f42231d86b5187d2cfdcab2a6c81d0f61dc/docs/best-practices/continuous-integration.md), and from the [CircleCI codesigning docs](https://circleci.com/docs/2.0/ios-codesigning/)
+
+1. Add `GITHUB_TOKEN` to env vars on CircleCI (https://circleci.com/gh/infinitered/YOURPROJECT/edit#env-vars). You should be able to find these in our team 1password under `CircleCI CI/CD Semantic Release Tokens`.
+
+- If you need to make a new `GITHUB_TOKEN`, go to https://github.com/settings/tokens/new and create a new one with `repo` access.
+
+2. Add the `Circle CI` Github team (Including the `infinitered-circleci` user) to your repo (https://github.com/infinitered/YOURPROJECT/settings/collaboration) with write access.
+
+3. Add the `Circle CI` Github team as a read-only collaborator to the private match certificates repo.
+
+4. Log in to GitHub/CircleCI as the CI user (`ci@infinite.red`, the credentials are in 1Password). Then in CircleCI, go to Project Settings > Checkout SSH keys (https://circleci.com/gh/infinitered/YOURPROJECT/edit#checkout) and add a new user key. This will allow CircleCI to clone the certs repo in order to sign your app.
+
+5. Go to Project Settings > Checkout SSH Keys and add a new deploy key. You will copy the fingerprint and paste into the `config.yml` example below in the `add_ssh_keys` section (there should be `"`s around it)
+
+6. Add a script to your `package.json` called `ci:setup`. This will run any necessary shell commands to prepare your project for building. For example, creating private files like `.env`. If you don't any additional setup, you can leave this command as "", or remove the `ci:setup` step from the `config.yml` example below.
+
+```json
+  {
+    ...
+    "scripts": {
+      ...
+      "ci:setup": "touch .env && echo \"ENV_VAR=\"$ENV_VAR >> .env",
+    },
+    ...
+  }
+```
+
+Note: `react-native-dotenv` throws errors if there is not a `.env` present with the variables it expects. However, if you don't want to put secret values in this script (you shouldn't), then you can add them directly to CircleCI under Project Settings > Environment Variables. Then you can reference them in this script as `$ENV_VAR`.
+
+7. Add `mac` configuration and `deploy_ios` job to your CircleCI `config.yml`:
+
+NOTE: The macOS boxes currently come with Node 11.0, with no apparent way to change the version. This shouldn't be a huge problem. One known issue is with `upath`, which is a deep dependency of react-native. If you encounter errors related to `upath` requiring a lower version of Node, just make sure it is at `1.1.0`, and not `1.0.4` in your `yarn.lock`. See https://github.com/airbnb/enzyme/issues/1637#issuecomment-397327562.
 
 ```yaml
 defaults: ...
@@ -125,6 +211,9 @@ mac: &mac
   macos:
     xcode: "10.1.0"
   working_directory: ~/repo
+  environment:
+    FL_OUTPUT_DIR: output
+  shell: /bin/bash --login -o pipefail
 
 version: 2
 jobs:
@@ -136,49 +225,78 @@ jobs:
     <<: *mac
     steps:
       - checkout
+      - add_ssh_keys:
+          fingerprints: — “SSH_FINGERPRINT_HERE”
+      - run:
+          name: Git configuration
+          command: git config user.email "ci@infinite.red" && git config user.name "CircleCI"
+      - run:
+          name: Set upstream branch
+          command: git branch --set-upstream-to origin ${CIRCLE_BRANCH}
+      # Node modules
       - restore_cache:
+          name: Restore node modules
           keys:
             - v1-dependencies-mac-{{ checksum "package.json" }}
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-mac-
       - run:
           name: Install dependencies
-          command: yarn install
+          command: NOYARNPOSTINSTALL=1 yarn install
       - save_cache:
           name: Save node modules
           paths:
             - node_modules
           key: v1-dependencies-mac-{{ checksum "package.json" }}
-      - run:
-          name: Install Gems
-          command: cd ios && bundle install
-      - run:
-          name: Fastlane
-          command: cd ios && bundle exec fastlane ios beta
 
-  deploy_android:
-    <<: *mac
-    steps:
-      - checkout
+      # Cocoapods
+      - run:
+          name: Fetch CocoaPods Specs
+          command: |
+            curl https://cocoapods-specs.circleci.com/fetch-cocoapods-repo-from-s3.sh | bash -s cf
+      - run:
+          working_directory: ios
+          name: Install CocoaPods
+          command: pod install --verbose
+
+      # Gems
       - restore_cache:
-          keys:
-            - v1-dependencies-mac-{{ checksum "package.json" }}
-            # fallback to using the latest cache if no exact match is found
-            - v1-dependencies-mac-
+          name: Restore gems
+          key: bundle-v1-{{ checksum "ios/Gemfile.lock" }}-{{ arch }}
       - run:
-          name: Install dependencies
-          command: yarn install
+          name: Bundle Install
+          command: bundle install
+          working_directory: ios
       - save_cache:
-          name: Save node modules
+          key: bundle-v1-{{ checksum "ios/Gemfile.lock" }}-{{ arch }}
           paths:
-            - node_modules
-          key: v1-dependencies-mac-{{ checksum "package.json" }}
+            - vendor/bundle
+
+      # Misc setup
       - run:
-          name: Install Gems
-          command: cd android && bundle install
+          name: Misc setup
+          command: yarn ci:setup
+
+      # Git grooming
       - run:
+          name: Pull latest git
+          command: git stash && git pull && git stash pop
+
+      # Run Fastlane
+      - run:
+          working_directory: ios
           name: Fastlane
-          command: cd android && bundle exec fastlane android beta
+          command: bundle exec fastlane ios beta
+
+      # Git cleanup
+      - run:
+          name: Pull latest git
+          command: git stash && git pull && git stash pop
+      - run:
+          name: Push version bump commit
+          command: git push
+      - store_artifacts:
+          path: output
 
 workflows:
   version: 2
@@ -189,29 +307,19 @@ workflows:
           requires:
             - setup
       - deploy_ios:
-          requires:
-            - tests
           filters:
-            branches: master
-      - deploy_android:
-          requires:
-            - tests
-          filters:
-            branches: master
+            branches:
+              only: master
 ```
 
-If you have CocoaPods dependencies, make sure you also add the following steps to your `deploy_ios` job before you execute Fastlane:
+## Troubleshooting tips
 
-```yaml
-      - run:
-          name: Fetch CocoaPods Specs
-          command: |
-            curl https://cocoapods-specs.circleci.com/fetch-cocoapods-repo-from-s3.sh | bash -s cf
-      - run:
-          name: Install CocoaPods
-          command: cd ios && pod install --verbose
-```
+- If you need to debug failed builds, you can use the "Rebuild with SSH" option in CircleCI. See https://circleci.com/docs/2.0/ssh-access-jobs/ for more info.
 
-NOTE: The macOS boxes currently come with Node 11.0, with no apparent way to change the version. This shouldn't be a huge problem. One known issue is with `upath`, which is a deep dependency of react-native. If you encounter errors related to `upath` requiring a lower version of Node, just make sure it is at `1.1.0`, and not `1.0.4` in your `yarn.lock`. See https://github.com/airbnb/enzyme/issues/1637#issuecomment-397327562.
+  - Tip: make sure you are logged in to Github/CircleCI as yourself (not the CI user) when you hit the button to rebuild with SSH.
 
------------------ WIP --------------------------
+- If you get a vague error saying `File main.jsbundle does not exist`, that means there was an error while building the app and you can view the more detailed message by inspecting the log files with the following command (while in SSH mode). Increase the number of lines from 50 as needed.
+
+  ```
+  tail -50 ios/output/buildlogs/gym/YourProject-YourProject.log
+  ```
