@@ -238,7 +238,7 @@ Format your commit messages like so to get the desired version bump:
 |--------|--------------|---------|
 | `fix/refactor(feature): Message` | Patch-level, e.g. `1.0.3` to `1.0.4` | `fix(wkwebview): Fixed issue #12 - crash when navigating` |
 | `feat(feature): Message` | Minor/Feature-level, e.g. `1.0.3` to `1.1.0` | `feat(android): Added file upload` |
-| `fix/feat/perf(feature): BREAKING CHANGES: Message` | Major/Breaking-level, e.g. `1.0.3` to `2.0.0` | `fix(ios): BREAKING CHANGES: Removed UIWebView` |
+| `fix/feat/perf(feature):` (and in body) `BREAKING CHANGE: Message` | Major/Breaking-level, e.g. `1.0.3` to `2.0.0` | `fix(ios): <subject>\nBREAKING CHANGE: Removed UIWebView` |
 
 Each release will include a changelog:
 
