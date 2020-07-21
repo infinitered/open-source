@@ -1,6 +1,8 @@
 # CircleCI CD Setup - React Native
 
-This document shows the steps necessary to set up automatic continuous integration testing and automatic Fastlane beta builds upon successfully merging a pull request.
+This document shows the steps necessary to set up CircleCI automatic continuous integration testing and automatic Fastlane beta builds upon successfully merging a pull request.
+
+Note: there is some experimental information about using Github Actions at [the end of the document](#Github-Actions-Setup).
 
 ## First Things First
 
@@ -10,7 +12,7 @@ This document shows the steps necessary to set up automatic continuous integrati
    - They better pass! Tests are important because you don't want to be deploying broken code.
    - See [this](https://github.com/infinitered/ChainReactApp2019) for an example of how we typically setup tests for a React Native app.
 
-## CircleCI Setup
+# CircleCI Setup
 
 1. [Log into CircleCI](https://circleci.com/vcs-authorize/) with your Github account
 2. Choose `infinitered` from the dropdown in the top left
@@ -320,6 +322,49 @@ workflows:
 
 - If you get a vague error saying `File main.jsbundle does not exist`, that means there was an error while building the app and you can view the more detailed message by inspecting the log files with the following command (while in SSH mode). Increase the number of lines from 50 as needed.
 
-  ```
-  tail -50 ios/output/buildlogs/gym/YourProject-YourProject.log
-  ```
+   ```
+   tail -50 ios/output/buildlogs/gym/YourProject-YourProject.log
+   ```
+  
+# Github Actions Setup
+  
+Here is some experimental information for Github Actions CI. Please add to it as you learn more about Github Actions!
+
+## Github Actions YML File
+
+```yml
+name: RN App CI
+on: [push]
+jobs:
+  build:
+    runs-on: macos-latest
+    env:
+      CI: true
+      NODE_ENV: development
+    steps:
+      - uses: actions/checkout@v1
+      - name: Cache my-app node modules
+        uses: actions/cache@v1
+        with:
+          path: my-app/node_modules
+          key: ${{ runner.OS }}-build-${{ hashFiles('**/my-app/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.OS }}-build-${{ env.cache-name }}-
+            ${{ runner.OS }}-build-
+            ${{ runner.OS }}-
+      - name: Install dependencies
+        run: |
+          yarn install
+      - name: Run unit tests
+        run: |
+          yarn test:unit
+      - name: Install cocoapods
+        run: |
+          cd my-app/ios
+          pod install --repo-update
+      - name: Run e2e tests
+        run: |
+          cd my-app
+          yarn test:e2e:build --configuration="ios.sim.debug"
+          yarn test:e2e --configuration="ios.sim.debug"
+```
