@@ -18,7 +18,6 @@ This list is currently being fleshed out. There are several missing projects and
 <thead>
   <tr>
     <th>Name</th>
-    <th>Lead</th>
     <th>Status</th>
     <th>CI</th>
     <th>CD</th>
@@ -30,7 +29,6 @@ This list is currently being fleshed out. There are several missing projects and
   <!-- Ignite CLI -->
   <tr>
     <td><a href="https://github.com/infinitered/ignite">Ignite CLI</a></td>
-    <td>Jamon</td>
     <td>Active</td>
     <td>✅</td>
     <td>✅</td>
@@ -44,8 +42,7 @@ This list is currently being fleshed out. There are several missing projects and
   <!-- Ignite Bowser -->
   <tr>
     <td><a href="https://github.com/infinitered/ignite-bowser">Ignite Bowser</a></td>
-    <td>Jamon</td>
-    <td>Active</td>
+    <td>Maintenance</td>
     <td>✅</td>
     <td>✅</td>
     <td>
@@ -58,7 +55,6 @@ This list is currently being fleshed out. There are several missing projects and
   <!-- Reactotron -->
   <tr>
     <td><a href="https://github.com/infinitered/reactotron">Reactotron</a></td>
-    <td>Rich</td>
     <td>Active</td>
     <td>✅</td>
     <td>✅</td>
@@ -72,7 +68,6 @@ This list is currently being fleshed out. There are several missing projects and
   <!-- Reactotron Core Client -->
   <tr>
     <td><a href="https://github.com/infinitered/reactotron-core-client">Reactotron Core Client</a></td>
-    <td>Rich</td>
     <td>Active</td>
     <td>✅</td>
     <td>✅</td>
@@ -86,7 +81,6 @@ This list is currently being fleshed out. There are several missing projects and
   <!-- Reactotron Core Server -->
   <tr>
     <td><a href="https://github.com/infinitered/reactotron-core-server">Reactotron Core Server</a></td>
-    <td>Rich</td>
     <td>Active</td>
     <td>✅</td>
     <td>✅</td>
@@ -100,7 +94,6 @@ This list is currently being fleshed out. There are several missing projects and
   <!-- Reactotron React Native -->
   <tr>
     <td><a href="https://github.com/infinitered/reactotron-react-native">Reactotron React Native</a></td>
-    <td>Rich</td>
     <td>Active</td>
     <td>✅</td>
     <td>✅</td>
@@ -114,7 +107,6 @@ This list is currently being fleshed out. There are several missing projects and
   <!-- Reactotron React JS -->
   <tr>
     <td><a href="https://github.com/infinitered/reactotron-react-js">Reactotron React JS</a></td>
-    <td>Rich</td>
     <td>Active</td>
     <td>✅</td>
     <td>✅</td>
@@ -128,7 +120,6 @@ This list is currently being fleshed out. There are several missing projects and
   <!-- Reactotron MST -->
   <tr>
     <td><a href="https://github.com/infinitered/reactotron-mst">Reactotron MST</a></td>
-    <td>Rich</td>
     <td>Active</td>
     <td>✅</td>
     <td>✅</td>
@@ -142,7 +133,6 @@ This list is currently being fleshed out. There are several missing projects and
   <!-- Reactotron Apisauce -->
   <tr>
     <td><a href="https://github.com/infinitered/reactotron-apisauce">Reactotron Apisauce</a></td>
-    <td>Rich</td>
     <td>Active</td>
     <td>✅</td>
     <td>✅</td>
@@ -157,7 +147,6 @@ This list is currently being fleshed out. There are several missing projects and
   <!-- Reactotron Redux -->
   <tr>
     <td><a href="https://github.com/infinitered/reactotron-redux">Reactotron Redux</a></td>
-    <td>Rich</td>
     <td>Active</td>
     <td>✅</td>
     <td>✅</td>
@@ -171,7 +160,6 @@ This list is currently being fleshed out. There are several missing projects and
   <!-- Reactotron Redux Saga -->
   <tr>
     <td><a href="https://github.com/infinitered/reactotron-redux-saga">Reactotron Redux Saga</a></td>
-    <td>Rich</td>
     <td>Active</td>
     <td>✅</td>
     <td>✅</td>
@@ -182,21 +170,9 @@ This list is currently being fleshed out. There are several missing projects and
     </td>
     <td><img alt="version" src="https://img.shields.io/npm/v/reactotron-redux-saga.svg" /></td>
   </tr>
-
-  <!-- Babel Plugin Ignite Ignore Reactotron -->
-  <tr>
-    <td><a href="https://github.com/infinitered/babel-plugin-ignite-ignore-reactotron">Babel Plugin Ignite Ignore Reactotron</a></td>
-    <td>❓</td>
-    <td>Maintenance</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td>❌</td>
-    <td><img alt="version" src="https://img.shields.io/npm/v/babel-plugin-ignite-ignore-reactotron.svg" /></td>
-  </tr>
   <!-- Gluegun -->
   <tr>
     <td><a href="https://github.com/infinitered/gluegun">Gluegun</a></td>
-    <td>Jamon</td>
     <td>Active</td>
     <td>✅</td>
     <td>✅</td>
@@ -210,7 +186,6 @@ This list is currently being fleshed out. There are several missing projects and
   <!-- Solidarity -->
   <tr>
     <td><a href="https://github.com/infinitered/solidarity">Solidarity</a></td>
-    <td>Gant</td>
     <td>Active</td>
     <td>✅</td>
     <td>❌</td>
@@ -220,7 +195,6 @@ This list is currently being fleshed out. There are several missing projects and
   <!-- Solidarity React Native -->
   <tr>
     <td><a href="https://github.com/infinitered/solidarity-react-native">Solidarity React Native</a></td>
-    <td>Gant</td>
     <td>Active</td>
     <td>✅</td>
     <td>✅</td>
@@ -234,7 +208,6 @@ This list is currently being fleshed out. There are several missing projects and
   <!-- apisauce -->
   <tr>
     <td><a href="https://github.com/infinitered/apisauce">apisauce</a></td>
-    <td>Robin</td>
     <td>Maintenance</td>
     <td>✅</td>
     <td>✅</td>
@@ -248,7 +221,6 @@ This list is currently being fleshed out. There are several missing projects and
   <!-- Ramdasauce -->
   <tr>
     <td><a href="https://github.com/infinitered/ramdasauce">Ramdasauce</a></td>
-    <td>Kevin</td>
     <td>Maintenance</td>
     <td>✅</td>
     <td>✅</td>
