@@ -41,20 +41,6 @@ This list is currently being fleshed out. There are several missing projects and
     </td>
     <td><img alt="version" src="https://img.shields.io/npm/v/ignite-cli.svg" /></td>
   </tr>
-  <!-- Ignite Andross -->
-  <tr>
-    <td><a href="https://github.com/infinitered/ignite-ir-boilerplate-andross">Ignite Andross</a></td>
-    <td>Jamon</td>
-    <td>Maintenance</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>
-      <a href="https://circleci.com/gh/infinitered/ignite-andross">
-        <img alt="CircleCI" src="https://circleci.com/gh/infinitered/ignite-andross.svg?style=svg" />
-      </a>
-    </td>
-    <td><img alt="version" src="https://img.shields.io/npm/v/ignite-andross.svg" /></td>
-  </tr>
   <!-- Ignite Bowser -->
   <tr>
     <td><a href="https://github.com/infinitered/ignite-bowser">Ignite Bowser</a></td>
@@ -68,142 +54,6 @@ This list is currently being fleshed out. There are several missing projects and
       </a>
     </td>
     <td><img alt="version" src="https://img.shields.io/npm/v/ignite-bowser.svg" /></td>
-  </tr>
-  <!-- Ignite Cyberdemon -->
-  <tr>
-    <td><a href="https://github.com/infinitered/ignite-ir-boilerplate-cyberdemon">Ignite Cyberdemon</a></td>
-    <td>TBD</td>
-    <td>Planning</td>
-    <td>🚧</td>
-    <td>🚧</td>
-    <td>🚧</td>
-    <td><img alt="version" src="https://img.shields.io/npm/v/ignite-ir-boilerplate-cyberdemon.svg" /></td>
-  </tr>
-  <!-- Ignite WebView -->
-  <tr>
-    <td><a href="https://github.com/infinitered/ignite-webview">Ignite WebView</a></td>
-    <td>Jamon</td>
-    <td>Active</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>
-      <a href="https://circleci.com/gh/infinitered/ignite-webview">
-        <img alt="CircleCI" src="https://circleci.com/gh/infinitered/ignite-webview.svg?style=svg" />
-      </a>
-    </td>
-    <td><img alt="version" src="https://img.shields.io/npm/v/ignite-webview.svg" /></td>
-  </tr>
-  <!-- Ignite Animatable -->
-  <tr>
-    <td><a href="https://github.com/infinitered/ignite-animatable">Ignite Animatable</a></td>
-    <td>TBD</td>
-    <td>Active</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>
-      <a href="https://circleci.com/gh/infinitered/ignite-animatable">
-        <img alt="CircleCI" src="https://circleci.com/gh/infinitered/ignite-animatable.svg?style=svg" />
-      </a>
-    </td>
-    <td><img alt="version" src="https://img.shields.io/npm/v/ignite-animatable.svg" /></td>
-  </tr>
-  <!-- Ignite i18n -->
-  <tr>
-    <td><a href="https://github.com/infinitered/ignite-i18n">Ignite i18n</a></td>
-    <td>TBD</td>
-    <td>Active</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>
-      <a href="https://circleci.com/gh/infinitered/ignite-i18n">
-        <img alt="CircleCI" src="https://circleci.com/gh/infinitered/ignite-i18n.svg?style=svg" />
-      </a>
-    </td>
-    <td><img alt="version" src="https://img.shields.io/npm/v/ignite-i18n.svg" /></td>
-  </tr>
-  <!-- Ignite Splash -->
-  <tr>
-    <td><a href="https://github.com/infinitered/ignite-splash">Ignite Splash</a></td>
-    <td>Leon</td>
-    <td>Active</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>
-      <a href="https://circleci.com/gh/infinitered/ignite-splash">
-        <img alt="CircleCI" src="https://circleci.com/gh/infinitered/ignite-splash.svg?style=svg" />
-      </a>
-    </td>
-    <td><img alt="version" src="https://img.shields.io/npm/v/ignite-splash.svg" /></td>
-  </tr>
-  <!-- Ignite Dev Screens -->
-  <tr>
-    <td><a href="https://github.com/infinitered/ignite-dev-screens">Ignite Dev Screens</a></td>
-    <td>TBD</td>
-    <td>Active</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>
-      <a href="https://circleci.com/gh/infinitered/ignite-dev-screens">
-        <img alt="CircleCI" src="https://circleci.com/gh/infinitered/ignite-dev-screens.svg?style=svg" />
-      </a>
-    </td>
-    <td><img alt="version" src="https://img.shields.io/npm/v/ignite-dev-screens.svg" /></td>
-  </tr>
-  <!-- Ignite Vector Icons -->
-  <tr>
-    <td><a href="https://github.com/infinitered/ignite-vector-icons">Ignite Vector Icons</a></td>
-    <td>TBD</td>
-    <td>Maintenance</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>
-      <a href="https://circleci.com/gh/infinitered/ignite-vector-icons">
-        <img alt="CircleCI" src="https://circleci.com/gh/infinitered/ignite-vector-icons.svg?style=svg" />
-      </a>
-    </td>
-    <td><img alt="version" src="https://img.shields.io/npm/v/ignite-vector-icons.svg" /></td>
-  </tr>
-  <!-- Ignite Maps -->
-  <tr>
-    <td><a href="https://github.com/infinitered/ignite-maps">Ignite Maps</a></td>
-    <td>TBD</td>
-    <td>Maintenance</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>
-      <a href="https://circleci.com/gh/infinitered/ignite-maps">
-        <img alt="CircleCI" src="https://circleci.com/gh/infinitered/ignite-maps.svg?style=svg" />
-      </a>
-    </td>
-    <td><img alt="version" src="https://img.shields.io/npm/v/ignite-maps.svg" /></td>
-  </tr>
-  <!-- Ignite Redux Persist -->
-  <tr>
-    <td><a href="https://github.com/infinitered/ignite-redux-persist">Ignite Redux Persist</a></td>
-    <td>TBD</td>
-    <td>Maintenance</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>
-      <a href="https://circleci.com/gh/infinitered/ignite-redux-persist">
-        <img alt="CircleCI" src="https://circleci.com/gh/infinitered/ignite-redux-persist.svg?style=svg" />
-      </a>
-    </td>
-    <td><img alt="version" src="https://img.shields.io/npm/v/ignite-redux-persist.svg" /></td>
-  </tr>
-  <!-- Ignite Redux DevTools -->
-  <tr>
-    <td><a href="https://github.com/infinitered/ignite-redux-devtools">Ignite Redux DevTools</a></td>
-    <td>TBD</td>
-    <td>Maintenance</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>
-      <a href="https://circleci.com/gh/infinitered/ignite-redux-devtools">
-        <img alt="CircleCI" src="https://circleci.com/gh/infinitered/ignite-redux-devtools.svg?style=svg" />
-      </a>
-    </td>
-    <td><img alt="version" src="https://img.shields.io/npm/v/ignite-redux-devtools.svg" /></td>
   </tr>
   <!-- Reactotron -->
   <tr>
@@ -289,35 +139,6 @@ This list is currently being fleshed out. There are several missing projects and
     </td>
     <td><img alt="version" src="https://img.shields.io/npm/v/reactotron-mst.svg" /></td>
   </tr>
-
-  <!-- Reactotron Redux -->
-  <tr>
-    <td><a href="https://github.com/infinitered/reactotron-redux">Reactotron Redux</a></td>
-    <td>Rich</td>
-    <td>Active</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>
-      <a href="https://circleci.com/gh/infinitered/reactotron-redux">
-        <img alt="CircleCI" src="https://circleci.com/gh/infinitered/reactotron-redux.svg?style=svg" />
-      </a>
-    </td>
-    <td><img alt="version" src="https://img.shields.io/npm/v/reactotron-redux.svg" /></td>
-  </tr>
-  <!-- Reactotron Redux Saga -->
-  <tr>
-    <td><a href="https://github.com/infinitered/reactotron-redux-saga">Reactotron Redux Saga</a></td>
-    <td>Rich</td>
-    <td>Active</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>
-      <a href="https://circleci.com/gh/infinitered/reactotron-redux-saga">
-        <img alt="CircleCI" src="https://circleci.com/gh/infinitered/reactotron-redux-saga.svg?style=svg" />
-      </a>
-    </td>
-    <td><img alt="version" src="https://img.shields.io/npm/v/reactotron-redux-saga.svg" /></td>
-  </tr>
   <!-- Reactotron Apisauce -->
   <tr>
     <td><a href="https://github.com/infinitered/reactotron-apisauce">Reactotron Apisauce</a></td>
@@ -394,20 +215,6 @@ This list is currently being fleshed out. There are several missing projects and
     </td>
     <td><img alt="version" src="https://img.shields.io/npm/v/apisauce.svg" /></td>
   </tr>
-  <!-- reduxsauce -->
-  <tr>
-    <td><a href="https://github.com/infinitered/reduxsauce">reduxsauce</a></td>
-    <td>Kevin</td>
-    <td>Maintenance</td>
-    <td>✅</td>
-    <td>✅</td>
-    <td>
-      <a href="https://circleci.com/gh/infinitered/reduxsauce">
-        <img alt="CircleCI" src="https://circleci.com/gh/infinitered/reduxsauce.svg?style=svg" />
-      </a>
-    </td>
-    <td><img alt="version" src="https://img.shields.io/npm/v/reduxsauce.svg" /></td>
-  </tr>
   <!-- Ramdasauce -->
   <tr>
     <td><a href="https://github.com/infinitered/ramdasauce">Ramdasauce</a></td>
@@ -421,20 +228,6 @@ This list is currently being fleshed out. There are several missing projects and
       </a>
     </td>
     <td><img alt="version" src="https://img.shields.io/npm/v/ramdasauce.svg" /></td>
-  </tr>
-  <!-- Thesis Phoenix -->
-  <tr>
-    <td><a href="https://github.com/infinitered/thesis-phoenix">Thesis Phoenix</a></td>
-    <td>Yulian</td>
-    <td>Maintenance</td>
-    <td>✅</td>
-    <td>❎</td>
-    <td>
-      <a href="https://circleci.com/gh/infinitered/thesis-phoenix">
-        <img alt="CircleCI" src="https://circleci.com/gh/infinitered/thesis-phoenix.svg?style=svg" />
-      </a>
-    </td>
-    <td><img alt="version" src="https://img.shields.io/hexpm/v/thesis.svg" /></td>
   </tr>
 </tbody>
 </table>
