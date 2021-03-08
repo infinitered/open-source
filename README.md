@@ -153,6 +153,34 @@ This list is currently being fleshed out. There are several missing projects and
     </td>
     <td><img alt="version" src="https://img.shields.io/npm/v/reactotron-apisauce.svg" /></td>
   </tr>
+    <!-- Reactotron Redux -->
+  <tr>
+    <td><a href="https://github.com/infinitered/reactotron-redux">Reactotron Redux</a></td>
+    <td>Rich</td>
+    <td>Active</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>
+      <a href="https://circleci.com/gh/infinitered/reactotron-redux">
+        <img alt="CircleCI" src="https://circleci.com/gh/infinitered/reactotron-redux.svg?style=svg" />
+      </a>
+    </td>
+    <td><img alt="version" src="https://img.shields.io/npm/v/reactotron-redux.svg" /></td>
+  </tr>
+  <!-- Reactotron Redux Saga -->
+  <tr>
+    <td><a href="https://github.com/infinitered/reactotron-redux-saga">Reactotron Redux Saga</a></td>
+    <td>Rich</td>
+    <td>Active</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>
+      <a href="https://circleci.com/gh/infinitered/reactotron-redux-saga">
+        <img alt="CircleCI" src="https://circleci.com/gh/infinitered/reactotron-redux-saga.svg?style=svg" />
+      </a>
+    </td>
+    <td><img alt="version" src="https://img.shields.io/npm/v/reactotron-redux-saga.svg" /></td>
+  </tr>
   <!-- Babel Plugin Ignite Ignore Reactotron -->
   <tr>
     <td><a href="https://github.com/infinitered/babel-plugin-ignite-ignore-reactotron">Babel Plugin Ignite Ignore Reactotron</a></td>
