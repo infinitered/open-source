@@ -28,71 +28,61 @@ This document shows the steps necessary to set up automatic continuous integrati
 1. Create a folder in the project root named `.circleci`.
 2. Create a file inside that folder named `config.yml`
 3. Use the below template in that file. For simple Node projects, you likely won't have to change it.
-4. If needed, see [configuration docs](https://circleci.com/docs/2.0/config-intro/#section=configuration) for additional configuration options.
-_(Here is a complete [config.yml](https://github.com/infinitered/open-source/blob/master/config.example.yml) with CI and CD steps completed)_
+4. If needed, see [configuration docs](https://circleci.com/docs) for additional configuration options.
 
 ```yaml
-# Javascript Node CircleCI 2.0 configuration file
-#
-# Check https://circleci.com/docs/2.0/language-javascript/ for more details
-#
-
 defaults: &defaults
   docker:
     # Choose the version of Node you want here
-    - image: circleci/node:10.11
+    - image: cimg/node:14.19.1
   working_directory: ~/repo
 
-version: 2
+version: 2.1
 jobs:
   setup:
     <<: *defaults
     steps:
       - checkout
-      - restore_cache:
-          name: Restore node modules
-          keys:
-            - v1-dependencies-{{ checksum "package.json" }}
-            # fallback to using the latest cache if no exact match is found
-            - v1-dependencies-
       - run:
           name: Install dependencies
-          command: yarn install
-      - save_cache:
-          name: Save node modules
-          paths:
-            - node_modules
-          key: v1-dependencies-{{ checksum "package.json" }}
-
+          command: |
+            yarn install
 
   tests:
     <<: *defaults
     steps:
       - checkout
-      - restore_cache:
-          name: Restore node modules
-          keys:
-            - v1-dependencies-{{ checksum "package.json" }}
-            # fallback to using the latest cache if no exact match is found
-            - v1-dependencies-
-      - run:
-          name: Change Permissions
-          command: sudo chown -R $(whoami) /usr/local
       - run:
           name: Run tests
-          command: yarn ci:test # this command will be added to/found in your package.json scripts
+          command: yarn ci:test
+
+  publish:
+    <<: *defaults
+    steps:
+      - checkout
+      - run: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+      # Run semantic-release after all the above is set.
+      - run:
+          name: Publish to NPM
+          command: yarn ci:publish # this will be added to your package.json scripts
 
 workflows:
-  version: 2
+  version: 2.1
   test_and_release:
     jobs:
       - setup
       - tests:
           requires:
             - setup
+      - publish:
+          requires:
+            - tests
+          filters:
+            branches:
+              only: master
 ```
 
-If your project requires global NPM packages (for example, `npm i -g react-native`) or `npm link`, add those steps to the `tests` block between the `chown` and tests blocks. This is more common when testing CLI packages. Don't forget the `chown` step right above those or you'll run into permission issues.
+If your project requires global NPM packages (for example, `npm i -g react-native`) or `npm link`, add those steps to the `tests` block. This is more common when testing CLI packages.
 
 ```yml
       - run:
@@ -131,7 +121,7 @@ If your project requires global NPM packages (for example, `npm i -g react-nativ
 ```yml
 defaults: ...
 
-version: 2
+version: 2.1
 jobs:
   setup: ...
 
@@ -155,7 +145,7 @@ jobs:
 
 
 workflows:
-  version: 2
+  version: 2.1
   test_and_release:
     jobs:
       - setup
@@ -178,8 +168,7 @@ workflows:
     "scripts": {
       ...
       "ci:test": "<command to run tests>",
-      "ci:publish": "yarn semantic-release",
-      "semantic-release": "semantic-release"
+      "ci:publish": "semantic-release"
     },
     ...
   }
@@ -209,8 +198,8 @@ workflows:
   }
   ```
 
-5. Add `NPM_TOKEN` and `GITHUB_TOKEN` entries to env vars on CircleCI (https://circleci.com/gh/infinitered/YOURPROJECT/edit#env-vars). You should be able to find these in our team 1password under `CircleCI CI/CD Semantic Release Tokens`.
- - If you need to make a new `NPM_TOKEN`, log into npm at your terminal (`npm login`) and then `cat ~/.npmrc`. The token is the thing after `//registry.npmjs.org/:_authToken=`.
+5. Add `NPM_TOKEN` and `GITHUB_TOKEN` entries to env vars on CircleCI ([https://app.circleci.com/settings/project/github/infinitered/YOURPROJECT/environment-variables](https://app.circleci.com/settings/project/github/infinitered/YOURPROJECT/environment-variables)). You should be able to find these in our team 1password under `CircleCI CI/CD Semantic Release Tokens`.
+ - If you need to make a new `NPM_TOKEN`, go here: [https://www.npmjs.com/settings/YOURUSER/tokens/new](https://www.npmjs.com/settings/YOURUSER/tokens/new) -- use the *Automation* type
  - If you need to make a new `GITHUB_TOKEN`, go to https://github.com/settings/tokens/new and create a new one with `repo` access. More info about [semantic-release authentication here](https://github.com/semantic-release/semantic-release/blob/6a8eede96f9e61f22ddbf885db7947798b1bf55c/docs/usage/ci-configuration.md#authentication).
 6. Add the `Circle CI` Github team (Including the `infinitered-circleci` user) to your repo (https://github.com/infinitered/YOURPROJECT/settings/collaboration)
 7. Check git tags `git tag --merged master`. Ensure that what shows up there matches what you expect to see.
